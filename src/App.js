@@ -6,6 +6,8 @@ import SchedList from './components/SchedList';
 import Semester from './components/Semester';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
+//test 
+
 function App() {
   return (
     <div className="App">
