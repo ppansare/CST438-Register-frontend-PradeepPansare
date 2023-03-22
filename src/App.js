@@ -7,6 +7,7 @@ import Semester from './components/Semester';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
 //test 
+//test 2
 
 function App() {
   return (
