@@ -8,6 +8,8 @@ import Radio from '@mui/material/Radio';
 import {DataGrid} from '@mui/x-data-grid';
 import {SEMESTER_LIST} from '../constants.js'
 
+
+
 // user selects from a list of  (year, semester) values
 class Semester extends Component {
     constructor(props) {
@@ -29,7 +31,7 @@ class Semester extends Component {
         renderCell: (params) => (
           <div>
             <Radio
-              checked={params.row.id == this.state.selected}
+              checked={params.row.id === this.state.selected}
               onChange={this.onRadioClick}
               value={params.row.id}
               color="default"
@@ -62,6 +64,15 @@ class Semester extends Component {
                 variant="outlined" color="primary" style={{margin: 10}}>
                 Get Schedule
               </Button>
+
+
+              <Button component={Link} 
+                    to={{pathname:'/AddStudent'}} 
+                variant="outlined" color="primary" style={{margin: 10}}>
+                Add Student
+              </Button>	
+
+
           </div>
       </div>
     )
